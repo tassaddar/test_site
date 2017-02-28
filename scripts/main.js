@@ -7,6 +7,10 @@ function setUserName() {
   myHeading.textContent = 'Mozilla is cool, ' + myName;
 }
 
+myButton.onclick = function() {
+  setUserName();
+}
+
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
